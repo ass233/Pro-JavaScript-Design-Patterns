@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var gongchang = {};
+    gongchang.yifu = function (argument) {
+        this.gr = 50;
+        alert('我们有'+this.gr);
+    }
+    gongchang.xie= function () {
+        alert('产鞋')
+    }
+    gongchang.yunshu = function () {
+        alert('运输')
+    }
+    gongchang.changzhang = function (para) {
+        return new gongchang[para]();
+    }
+
+    var me = gongchang.changzhang('yifu');
+    alert(me.gr);
+</script>
+</body>
+</html>
